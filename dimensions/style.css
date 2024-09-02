@@ -1,0 +1,54 @@
+.height{
+    border: 1px solid #000;
+    max-height: 100px;
+    /* overflow hone se bachage ye */
+    overflow: scroll;
+}
+/* --------------agar humara content .min-height se chota  hai to size same rhega but agr bda hai toh apne aap adjust kr lega overflow nhi hoga */
+.min-height{
+    min-height: 100px;
+    margin: 10px;
+   
+}
+/* ---------------Overflow----------------0\ */
+
+/* it has four values- visible, hidden, scroll, auto */
+
+.over{
+    border: 1px solid #000;
+    margin-top: 10px;
+    max-height: 100px;   
+    overflow: auto;
+}
+
+/* -----------------position-----------------1\ */
+.box{
+    border: 2px solid #000;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.con1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.con2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.con3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.con4{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.con5{
+    position: absolute;
+    text-align: center;
+}

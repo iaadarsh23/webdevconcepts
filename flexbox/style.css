@@ -1,13 +1,44 @@
 .container{
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     border: 2px solid ;
     display: flex;
-    flex-direction: row-reverse;
+    
+
+    /* flex-wrap cheezo ko ek jagah rap kar deta hai width kam nhi krne deta */
+
+
+    /* justify-content: main axes (horizontal)ke according items ko align kr rha hota hai */
+    justify-content: center;
+    align-items: center;
+    /* align-items: cross axes (vertical) ke according items ko align kr rha hota hai */
+    
+   
+    align-content: flex-end;
+    align-content: space-around;
+    align-content: space-between;
 
 }
 
 .box{
     border: 3px solid;
     background-color: aqua;
+    width: 1000px;
+    
 }
+
+/* ------------------------flex item properties------------------------ */
+
+#b1{
+    order: 1;
+}
+#b2{
+    order: 5;
+}
+#b3{
+    order: 1;
+}
+#b4{
+    order: 2;
+}
+

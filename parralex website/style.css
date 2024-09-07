@@ -1,115 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
 }
-.container{
+
+.container {
     position: relative;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
-
 }
-.back  {
+
+.back {
     position: absolute;
     filter: blur(4px);
     height: 100%;
-    width: 100%;   
+    width: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-40px ) scale(5);
-    
+    transform: translateZ(-40px) scale(5);
 }
+
 .for {
     position: absolute;
     width: 100vh;
-    
     object-fit: cover;
     z-index: -1;
     transform: translateZ(-10px) scale(1.2);
 }
-h1{
+
+h1 {
     position: absolute;
     top: 1rem;
     font-size: 10rem;
     letter-spacing: 80px;
     color: rgb(255, 255, 255);
     transform: translateZ(-15px) scale(2.5);
-    
-    
     text-shadow: 10px 2px 4px rgb(0, 0, 0, 0.5);
-    ;
-    
 }
-.for1{
+
+.for1 {
     position: absolute;
     top: 12rem;
-    left:10px;
+    left: 10px;
     object-fit: cover;
     width: 350px;
-    
-    
 }
 
-    
-    
-
-.for2{
+.for2 {
     position: absolute;
-    top:15rem;
-    right:10px;
+    top: 15rem;
+    right: 10px;
     object-fit: cover;
     width: 300px;
-    
-    
 }
 
-section{
+section {
     position: absolute;
     z-index: 1;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
     margin: 10rem 0;
 }
-.bg{
+
+section:hover {
+    color: rgb(0, 149, 255);
+}
+
+.bg {
     position: relative;
     width: 100%;
     background-attachment: fixed;
     height: 500px;
     background-repeat: cover;
     background-position: center;
-
 }
 
-.bg1{
-    
+.bg1 {
     background-image: url(images/sa.jpeg);
 }
-.bg2{
-    background-image: url(images/ms.jpeg);
 
+.bg2 {
+    background-image: url(images/ms.jpeg);
 }
-.bg3{
+
+.bg3 {
     background-image: url(images/ro.jpeg);
 }
-.sec{
+
+.sec {
     font-size: 5rem;
     padding: 0 8rem;
 }
-.text{
+
+.text {
     font-size: 1.5rem;
     padding: 0rem 8rem;
     margin: 5rem 0;
-    background-color: rgba(0, 0, 0, 0.326);
+    background-color: rgba(0, 0, 0, 0.225);
 }
+
+.dsec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 228, 196, 0.263);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    border-radius: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    align-items: center;
+    padding: 2rem;
+}
+
+.dsec:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+

@@ -51,17 +51,29 @@ h1 {
 .for1 {
     position: absolute;
     top: 12rem;
-    left: 10px;
+    
+   
     object-fit: cover;
-    width: 350px;
+    
+    z-index: -1;
+    transform: translateZ(-10px) scale(1.2);
+    left: -30rem;
+    object-fit: cover;
+    width: 600px;
+    
 }
 
 .for2 {
     position: absolute;
     top: 15rem;
-    right: 10px;
+   
+    
     object-fit: cover;
-    width: 300px;
+    z-index: -1;
+    transform: translateZ(-10px) scale(1.2);
+    right: -30rem;
+    object-fit: cover;
+    width: 500px;
 }
 
 section {

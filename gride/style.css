@@ -15,20 +15,27 @@
     display: grid;
     
     text-align: center;
-    grid-template-columns: 250px  ;
-    grid-template-rows: 20px 1fr 1fr 20px;
-    gap: 10px;
- 
+  
 
+    grid-template-columns: 300px 250px 300px ;
+    grid-template-rows: 400px 200px 150px 200px;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header header header header header header"
+    "main  main main main main  sidebar sidebar sidebar"
+    "content content content content content content content content"
+    "footer footer footer footer footer footer footer footer";
 }
 .box{
     background: linear-gradient(rgb(0, 208, 255), rgb(35, 35, 255));
-
+    display: flex;
+    justify-content:center;
+    align-items: center;
     border: 3px solid;
 
    
 }
-#b1{
+/* #b1{
     grid-column-start: 1;
     grid-column-end: 4;
     
@@ -47,4 +54,19 @@
 #b4{
     grid-column-start: 1;
     grid-column-end: 4;
+} */
+#b1{
+    grid-area: footer;
 }
+#b2{
+    grid-area: sidebar;
+}
+#b3{
+    grid-area: content;
+}
+#b4{
+    grid-area: header;
+}
+
+
+/* -------------------advance grid------------------- */

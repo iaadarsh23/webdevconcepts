@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#heading{
+    text-align: center;
+    margin: 1rem;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70rem 1fr;
+    gap: 10px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    
+    "main main  side";
+  
+}
+.box{
+    border: 1px solid;
+    margin: 2rem;
+    padding: 1rem;
+
+}
+.b1{
+    grid-area:main ;
+}
+.b2{
+    grid-area: side;
+}
